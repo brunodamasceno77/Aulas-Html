@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Aula Forms</title>
+    </head>
+    <body>
+        <h1>Lista de jogos favoritos</h1>
+        <form action="#">
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome" required="required" />
+            <label for="Sobrenome">Sobrenome</label>
+            <input type="text" id="Sobrenome" /><br />
+            <br />
+            <label for="email">Email:</label>
+            <input
+                type="text"
+                id="email"
+                size="58"
+                placeholder="exemplo.de.email@ios.com.br"
+            />
+            <br /><br />
+            <p>Qual jogo você ja jogou?</p>
+            <label for="op1">Sonic</label>
+            <input type="radio" name="listajogos" id="op1" /> <br />
+
+            <label for="op2">Super Mario Word</label>
+            <input type="radio" name="listajogos" id="op2" /> <br />
+
+            <label for="op3">GOD 3</label>
+            <input type="radio" name="listajogos" id="op3" /> <br />
+
+            <label for="op4">Free Fire</label>
+            <input type="radio" name="listajogos" id="op4" /> <br />
+
+            <p>Qual plataforma você joga?</p>
+            <label for="op1">Planstation</label>
+            <input type="checkbox" name="1plataforma" id="op1" /> <br />
+
+            <label for="op2">Xbox</label>
+            <input type="checkbox" name="1plataforma" id="op2" /> <br />
+
+            <label for="op3">PC</label>
+            <input type="checkbox" name="1plataforma" id="op3" /> <br />
+
+            <label for="op4">Celular</label>
+            <input type="checkbox" name="1plataforma" id="op4" /> <br />
+            <br />
+            <br />
+            <hr />
+
+            <label for="jogos">Selecione um jogo da lista</label>
+            <select name="jogos" id="jogos">
+                <option value="slc" hidden>Selecione um jogo</option>
+                <option value="GTA V">GTA V</option>
+                <option value="NFS-4">NFS-4</option>
+                <option value="Free Fire">Free Fire</option>
+                <option value="Colheita Feliz">Colheita Feliz</option>
+            </select>
+            <br />
+            <br />
+            <hr />
+            <label for="dlist">Sua cidade</label>
+            <input autocomplete="on" list="cidade" id="dlist" name="dlist" />
+            <datalist id="cidade">
+                <option value="Guarulhos"></option>
+                <option value="São Paulo"></option>
+                <option value="Osasco"></option>
+            </datalist>
+            <br />
+            <hr />
+            <br />
+            0
+            <input type="range" id="valor_01" name="valor_01" />
+            100
+            <br />
+            <label for="sugestao">deixe uma sugestao aqui:</label> <br />
+            <textarea
+                name="sugestao"
+                id="sugestao"
+                cols="50"
+                rows="5"
+                placeholder="Sugestao"
+            ></textarea>
+            <br />
+            <br>
+            <br>
+
+            <form method="post" id="Contato" action="mailto:brunorochadamasceno@hotmail.com"></form>
+            
+        
+            <input type="submit" value="Enviar" /><br />
+        </form>
+    </body>
+</html>
